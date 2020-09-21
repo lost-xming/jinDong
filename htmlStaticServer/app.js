@@ -1,9 +1,9 @@
 var express = require("express");
 var app = express();
 
-app.use(express.static("/wwl-daWang/"));
+app.use(express.static("/wwl-daWang/dist/"));
 app.get("/", function(req, res) {
-	res.send("Hello World!");
+	res.send("Hello jinDong!");
 });
 var server = app.listen(8083, function() {
 	var host = server.address().address;
