@@ -44,7 +44,7 @@ export default {
   .logo {
     padding-left: 50px;
     .logoImg {
-      width: 80px;
+      width: 200px;
     }
   }
   .navBox {

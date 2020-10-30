@@ -3,18 +3,15 @@
     <Header />
     <el-carousel :interval="5000" arrow="always" height="900px">
       <el-carousel-item>
-        <div class="swiperItem swiperItem1">
-          <img
-            class="bannerItem1-1"
-            src="./../assets/banner1-1.webp"
-            alt="tupian"
-          />
-        </div>
+        <div class="swiperItem swiperItem1" />
       </el-carousel-item>
       <el-carousel-item>
         <div class="swiperItem swiperItem2">
           <span class="swiperItem2-1">做您信任的供应商</span>
         </div>
+      </el-carousel-item>
+      <el-carousel-item>
+        <div class="swiperItem swiperItem3" />
       </el-carousel-item>
     </el-carousel>
     <div class="fkEditor simpleText">
@@ -126,6 +123,13 @@ export default {
       color: rgb(255, 255, 255);
       background-color: initial;
     }
+  }
+  .swiperItem3 {
+    background: url("./../assets/banner3.jpg") center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .fkEditor {
     padding-top: 80px;

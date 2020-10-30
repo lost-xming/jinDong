@@ -48,8 +48,8 @@ export default {
   .introductionright1 {
     height: 400px;
     margin: 20px;
-    background: url("./../assets/introduction.webp") center center no-repeat;
-    background-size: cover;
+    background: url("./../assets/Product-4.png") center center no-repeat;
+    background-size: contain;
   }
   .introductionright2 {
     height: 400px;

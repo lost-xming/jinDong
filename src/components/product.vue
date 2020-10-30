@@ -21,7 +21,7 @@
         <div class="productItem">
           <div>
             <div class="productImage productImage1" />
-            <div class="productText">户外防水广告机</div>
+            <div class="productText">厨余垃圾处理器A</div>
           </div>
         </div>
       </el-col>
@@ -29,7 +29,7 @@
         <div class="productItem">
           <div>
             <div class="productImage productImage2" />
-            <div class="productText">触摸一体机</div>
+            <div class="productText">厨余垃圾处理器B</div>
           </div>
         </div>
       </el-col>
@@ -37,11 +37,11 @@
         <div class="productItem">
           <div>
             <div class="productImage productImage3" />
-            <div class="productText">透明展示柜</div>
+            <div class="productText">厨余垃圾处理器C</div>
           </div>
         </div>
       </el-col>
-      <el-col :span="8">
+      <!-- <el-col :span="8">
         <div class="productItem">
           <div>
             <div class="productImage productImage1" />
@@ -64,7 +64,7 @@
             <div class="productText">透明展示柜</div>
           </div>
         </div>
-      </el-col>
+      </el-col> -->
     </el-row>
   </div>
 </template>
@@ -87,15 +87,15 @@
     }
     .productImage1 {
       background: url("./../assets/Product-1.png") center center no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
     .productImage2 {
       background: url("./../assets/Product-2.png") center center no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
     .productImage3 {
       background: url("./../assets/Product-3.png") center center no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
     .productText {
       height: 40px;
