@@ -1,13 +1,14 @@
-var express = require("express");
-var app = express();
+const express = require("express");
+const app = express();
+const path = require("path");
 
 app.use(express.static("/wwl-jinDong/dist/"));
-app.get("/", function(req, res) {
-	res.send("Hello World!");
+app.get("*", function(req, res) {
+	res.sendFile(path.resolve(__dirname, "./../dist/index.html"));
 });
-var server = app.listen(8083, function() {
-	var host = server.address().address;
-	var port = server.address().port;
+const server = app.listen(8083, function() {
+	const host = server.address().address;
+	const port = server.address().port;
 
 	console.log("Example app listening at http://%s:%s", host, port);
 });
