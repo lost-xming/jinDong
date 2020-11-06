@@ -6,9 +6,7 @@
         <div class="swiperItem swiperItem1" />
       </el-carousel-item>
       <el-carousel-item>
-        <div class="swiperItem swiperItem2">
-          <span class="swiperItem2-1">做您信任的供应商</span>
-        </div>
+        <div class="swiperItem swiperItem2" />
       </el-carousel-item>
       <el-carousel-item>
         <div class="swiperItem swiperItem3" />

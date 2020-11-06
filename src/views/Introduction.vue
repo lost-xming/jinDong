@@ -45,16 +45,18 @@ export default {
 }
 .advantage {
   height: 586px;
-  background: url("./../assets/jianjie-3.jpg") center center no-repeat;
+  background: url("./../assets/jianjie-2.webp") left center no-repeat;
   background-size: cover;
   position: relative;
   margin-bottom: 40px;
   .advantageText {
     width: 820px;
     color: rgb(102, 102, 102);
+    background-color: #f0f0f0;
+    padding: 80px 40px;
     position: absolute;
-    top: 160px;
-    left: 400px;
+    top: 120px;
+    right: 20px;
     h1 {
       color: #333;
       font-size: 34px;
