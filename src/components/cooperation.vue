@@ -3,31 +3,10 @@
     <h1>合作客户</h1>
     <div class="cooperationBox">
       <el-row>
-        <el-col :span="6">
+        <el-col :span="6" v-for="(v, i) in logoArr" :key="`${i}-index`">
           <div class="cooperationItem">
             <div :class="['itemLogo', type === '1' ? 'itemLogo2' : null]">
-              1
-            </div>
-          </div>
-        </el-col>
-        <el-col :span="6">
-          <div class="cooperationItem">
-            <div :class="['itemLogo', type === '1' ? 'itemLogo2' : null]">
-              2
-            </div>
-          </div>
-        </el-col>
-        <el-col :span="6">
-          <div class="cooperationItem">
-            <div :class="['itemLogo', type === '1' ? 'itemLogo2' : null]">
-              3
-            </div>
-          </div>
-        </el-col>
-        <el-col :span="6">
-          <div class="cooperationItem">
-            <div :class="['itemLogo', type === '1' ? 'itemLogo2' : null]">
-              4
+              <img :src="v.src" :alt="v.name" class="imgLogoItem" />
             </div>
           </div>
         </el-col>
@@ -42,6 +21,28 @@ export default {
       type: String,
       default: "1"
     }
+  },
+  data() {
+    return {
+      logoArr: [
+        {
+          src: require("./../assets/wode.png"),
+          name: "沃德商贸"
+        },
+        {
+          src: require("./../assets/tongxu.png"),
+          name: "桐旭科技"
+        },
+        {
+          src: require("./../assets/qiaoxing.png"),
+          name: "恰星商贸"
+        },
+        {
+          src: require("./../assets/zhuoyang.png"),
+          name: "卓阳科技"
+        }
+      ]
+    };
   }
 };
 </script>
@@ -77,5 +78,8 @@ export default {
 }
 .cooperation2 {
   background-color: rgba(247, 247, 247, 1);
+}
+.imgLogoItem {
+  width: 165px;
 }
 </style>
