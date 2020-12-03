@@ -37,7 +37,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .introductionBox {
-  height: 600px;
+  min-height: 600px;
   padding: 0 50px;
   display: flex;
   align-items: center;
